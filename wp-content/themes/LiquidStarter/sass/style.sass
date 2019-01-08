@@ -1,0 +1,178 @@
+// This is the single file output by sass. It is intended to @import other files and declare general global styles
+
+// 0 - EXTERNAL LIBRARIES
+//@import 'partials/bourbon/bourbon'
+@import 'compass'
+
+// 1 - BASE TOOLS
+@import 'partials/reset'
+@import 'partials/base' 
+@import 'partials/grid'
+@import 'partials/text'
+@import 'partials/goodies'
+
+
+// 2 - CUSTOM PAGES
+@import 'partials/pages/home' 
+@import 'partials/pages/landing' 
+@import 'partials/pages/single' 
+@import 'partials/pages/clients'
+@import 'partials/pages/team'
+@import 'partials/pages/case-study'
+@import 'partials/pages/blog'
+@import 'partials/pages/contact'
+@import 'partials/pages/404'
+
+// 3 - GLOBAL PAGE ELEMENTS
+
+@import 'partials/build/header'
+@import 'partials/build/header-home'
+@import 'partials/build/footer'
+@import 'partials/build/nav' 
+@import 'partials/build/subnav'    
+
+
+// 4 - GLOBAL
+
+html
+	background-color: $body-bg
+
+	body
+		width: 100%
+		height: 100%
+		overflow-x: hidden
+		max-width: $max-width
+		margin: 0 auto
+		background-color: #FFF
+		font-family: $heading-font
+
+		.wrapper
+			width: 96%
+			margin: 0 auto
+			max-width: $max-width
+
+		// Default font stylings applied to body
+
+		h1
+			@include SansSerifH1
+
+			@media (max-width: $break-small)
+				font-size: 3em
+		h2
+			@include SansSerifH2
+		h3
+			@include SansSerifH3
+			@media (max-width: $break-small)
+
+				font-size: 2.2em
+		h4
+			@include SansSerifH4
+		p, li, a
+			@include BodyFont
+
+		a
+			cursor: pointer
+
+		p
+			img
+				@media (max-width: $break-small)
+					width: 100%
+					margin: 0 auto
+					display: block
+					height: auto
+
+		// The standard square button used throught site, plius additional versions. 
+		.wpcf7-submit
+			margin: 20px 0 !important
+			float: left
+			border: none
+
+		.btn, .wpcf7-submit
+			display: block
+			-webkit-appearance: none
+			padding: 2px 5px
+			background: $aisle9-blue
+			color: #FFF
+			text-decoration: none
+			width: 150px
+			margin: 20px 0
+			text-align: center
+			text-transform: uppercase
+			transition: all 0.3s ease 0s
+			border: 1px solid $aisle9-blue
+			@include BodyFont
+
+			&:hover
+				color: $aisle9-blue
+				background-color: #FFF
+				border: 1px solid $aisle9-blue
+
+
+			@media (max-width: $break-small)
+				margin: 20px auto
+
+		.btn.black
+			border: 1px solid #000
+			color: #000
+			width: 150px
+
+			&:hover
+				color: $aisle9-blue
+				border: 1px solid $aisle9-blue
+
+			@media (max-width: $break-small)
+				margin: 20px auto
+
+		.btn.black.fill
+			border: 1px solid #000
+			background-color: #000
+			color: #FFF
+			width: 150px
+
+			&:hover
+				color: #000
+				border: 1px solid #000
+				background-color: #FFF
+
+		// The scroller button that appears on the L2 pages
+
+		.scroller
+			margin: 0 auto   
+			display: block
+			width: 50px
+			height: 50px
+			border: 1px solid #000
+			position: absolute
+			left: 46%
+
+			@media (max-width: $break-small)
+				display: none
+
+			img
+				width: 30px
+				height: 19px
+				margin: 0 auto
+				display: block
+				padding-top: 16px
+
+		.scroller.white
+			border: 1px solid #FFF
+
+		// GLOBAL - use for hide/show on mobile only text, please no images. 
+
+		.mobile-only
+			@media (min-width: $break-small)
+				display: none
+
+		.desktop-only
+			@media (max-width: $break-small)
+				display: none
+
+		// GLOBAL - if image src is empty, hide image tag 
+
+		img[src=""]
+			display: none !important
+
+.view-article
+	display: none
+		

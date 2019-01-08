@@ -1,0 +1,51 @@
+// colors - Lite to Dark
+$gray1: #DCDCDC
+$gray2: #B4B4B4
+$gray3: #8C8C8C
+$gray4: #575757
+$gray5: #313131
+
+$aisle9-gray: #e7e7e7
+$aislp9-darygray: #464646
+$aisle9-blue: #20cbd4
+$black: #000000
+
+$body-bg: #585858
+
+// Fonts
+
+$heading-font: 'Open Sans', sans-serif
+
+// shadowing
+$default-shadow: #CCC 0px 2px 2px
+
+// line-heights
+$default-line-height: 1.1
+
+// border-radii
+$default-border-radius: 5px
+
+// sizing
+$base-font-size: 100%
+$max-width: 1140px
+
+// break-points
+$break-medium: 850px
+$break-large: 950px
+$break-tablet: 1025px
+$break-small: 750px
+
+// Generates all browser prefixes for a given property
+// ex @include vendorize(border-radius, 5px)
+@mixin vendorize($property, $value)
+	-webkit-#{$property}: $value
+	-moz-#{$property}: $value
+	-ms-#{$property}: $value
+	-o-#{$property}: $value
+	#{$property}: $value	
+
+// Change opacity to 50%
+@mixin halfandhalf
+	zoom: 1
+	filter: alpha(opacity=50)
+	opacity: 0.5

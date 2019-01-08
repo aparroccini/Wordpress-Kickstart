@@ -1,0 +1,115 @@
+.home-page footer
+	background-color: $aisle9-blue  
+
+	.wrapper
+		max-width: $max-width  
+
+
+footer
+	background-color: $aislp9-darygray
+	color: #fff
+	padding: 0px 0
+	clear: both
+
+	a
+		color: #fff
+		text-decoration: none
+
+		@media (max-width: $break-small)
+			display: block
+
+		&:hover
+			text-decoration: underline
+
+	.copyright
+		padding-top: 10px
+		font-size: .6em
+		padding-bottom: 20px
+
+	em
+		@media (max-width: $break-small)
+			display: none
+
+	nav.footer-nav
+		padding-top: 20px
+		padding-bottom: 20px
+
+		@media (max-width: $break-small)
+			@include spanWidth(12)
+
+		ul
+			li
+				border-right: 1px solid #FFF
+
+				&:last-of-type
+					border-right: none
+
+				a
+					color: #FFF
+
+					&:hover
+						color: $black
+
+	.logo-img
+		display: block
+		max-width: 100%
+		padding-bottom: 10px
+		padding-top: 20px
+
+		@media (max-width: $break-small)
+			display: none
+
+	.info
+		@media (max-width: $break-small)
+			@include spanWidth(12)
+			text-align: center
+
+	.social.white
+		li
+			background-image: url('../img/social-sprite-white.png')
+
+
+	.social
+
+		@media (max-width: $break-small)
+			@include spanWidth(12)
+		ul
+			float: right
+			@media (max-width: $break-small)
+				float: none
+				text-align: center
+				padding-bottom: 10px
+
+			li
+				background-image: url('../img/social-sprite.png')
+				background-repeat: no-repeat
+				display: inline-block
+				width: 36px
+				height: 37px
+
+				a
+					display: block
+					height: 100%
+
+				&.fb
+					background-position: 0 -36px
+
+					&:hover
+						background-position: 0 0px
+
+				&.tw
+					background-position: -41px -36px
+
+					&:hover
+						background-position: -41px 0
+				&.li
+					background-position: -83px -36px
+
+					&:hover
+						background-position: -83px 0
+				&.pi
+					background-position: -124px -36px
+
+					&:hover
+						background-position: -124px 0
+

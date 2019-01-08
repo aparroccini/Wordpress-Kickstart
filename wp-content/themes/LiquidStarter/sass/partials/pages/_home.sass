@@ -1,0 +1,131 @@
+.home-page
+	max-width: 100%
+
+	.wrapper
+		margin: 0 auto
+
+		section.hero-content
+			padding: 60px 0
+
+			height: 600px
+			margin-bottom: 80px
+			position: relative
+
+
+
+
+			@media (max-width: $break-small)
+				background-size: 100%
+				height: 700px
+				background-position: bottom center
+
+			div
+				text-align: right
+				max-width: $max-width
+				margin: 0 auto
+				background-image: url('../img/home-page-key.png')
+				background-repeat: no-repeat
+				background-position: bottom left
+				background-size: 753px
+				height: 449px
+
+				@media (max-width: $break-tablet)
+					background-size: 600px
+
+				@media (max-width: $break-large)
+					background-size: 400px
+					height: 520px	
+
+
+				@media (max-width: $break-small)
+					background-size: 100%
+					height: 650px
+
+
+				br
+					@media (max-width: $break-large)
+						display: none
+
+				h1, h4, p
+					text-align: right
+					display: block
+
+					@media (max-width: $break-small)
+						text-align: center
+
+				h1
+					padding-left: 32%
+					padding-bottom: 30px
+
+					@media (max-width: $break-large)
+						padding-left: 0
+
+				h4
+					text-transform: uppercase
+					padding-top: 10px
+
+				p
+					padding-left: 50%
+					padding-top: 10px
+
+					@media (max-width: $break-large)
+						padding-left: 10%
+
+					@media (max-width: $break-small)
+						padding-left: 0
+
+				p br
+					@media (max-width: $break-small)
+						display: none
+
+			.scroller
+				bottom: -50px
+
+	section.sub-content
+		@include gradient-black
+		padding: 0 2%
+
+		.wrapper
+			max-width: $max-width
+			margin: 0 auto
+			background-image: url('../img/head-in-box.png')
+			background-repeat: no-repeat
+			background-position: bottom right
+			background-size: 450px
+			height: 680px
+
+			@media (max-width: $break-small)
+				height: 1000px
+				background-size: 80%
+				background-position: bottom 
+
+			p br
+				@media (max-width: $break-large)
+					display: none
+
+		h1
+			color: #FFF
+			padding-top: 60px
+
+			@media (max-width: $break-small)
+				text-align: center
+
+		p
+			color: #fff
+			padding: 40px 0	
+
+			@media (max-width: $break-large)
+				display: block
+				width: 45%
+
+			@media (max-width: $break-small)
+				text-align: center	
+				width: 100%
+
+		.btn
+			margin-bottom: 80px
+
+
+					
+
+

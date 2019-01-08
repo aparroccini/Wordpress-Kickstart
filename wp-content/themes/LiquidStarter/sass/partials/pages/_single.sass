@@ -1,0 +1,165 @@
+.single-post, .category, .archive
+
+	.main-container
+			
+		.hero-content
+			position: relative
+			padding-top: 0
+			height: 400px
+			margin-bottom: 20px
+
+			@media (max-width: $break-small)
+				height: 200px !important
+				background-size: 200% !important
+				background-position: center
+
+			> img
+				max-width: 100%
+				position: relative
+
+			.inside
+				position: absolute
+				z-index: 9999
+				width: 96%
+				height: 100%
+
+				h1	
+					color: #fff
+
+
+				.scroller
+					bottom: 30px
+
+		.sub-content
+			padding: 50px 6% !important
+			background-color: #FFF
+
+			@media (max-width: $break-small)
+				@include spanWidth(12)
+
+		.social
+			@media (max-width: $break-small)
+				@include spanWidth(12)
+				border-left: none
+				text-align: center
+
+				h2
+					padding-top: 20px
+
+			border-left: 1px solid #CCC
+			height: 97px
+			padding-top: 0
+
+
+			ul
+				@include spanWidth(12)
+
+				li
+
+	section
+		padding: 50px 2%
+
+		.inside
+			padding: 0px !important
+
+		a
+			text-decoration: none
+
+
+		h3
+			color: $aisle9-blue
+			text-transform: uppercase
+
+		h2
+			font-weight: 500
+			text-transform: uppercase
+			padding: 10px 0
+
+		p
+			padding: 10px 0
+
+	.social
+
+		@media (max-width: $break-small)
+			@include spanWidth(12)
+	
+		#s-share-buttons
+
+			@media (max-width: $break-small)
+				float: none
+				text-align: center
+				padding-bottom: 10px
+
+			a
+				background-image: url('../img/social-sprite-blog.png')
+				background-repeat: no-repeat
+				display: inline-block
+				width: 36px
+				height: 37px
+
+				&.s3-facebook 
+					background-position: 0 0 !important
+
+					&:hover
+						background-position: 0 -36px !important
+
+				&.s3-twitter
+					background-position: -41px 0 !important
+
+					&:hover
+						background-position: -41px -36px !important
+				&.s3-linkedin
+					background-position: -83px 0 !important
+
+					&:hover
+						background-position: -83px -36px !important
+			.pinit-btn-div
+				background-position: -124px 0 !important
+				background-image: url('../img/social-sprite-blog.png')
+				background-repeat: no-repeat
+				display: inline-block
+				width: 36px
+				height: 37px
+
+
+				span
+					background: none
+					box-shadow: none
+
+				&:hover
+					background-position: -124px -36px !important
+
+.cat-list
+	@media (max-width: $break-small)
+		padding-top: 20px
+
+.blog-meta
+	margin-left: 0
+	padding-top: 20px
+
+	li
+		display: inline-block
+		padding: 0 10px
+		border-right: 1px solid #CCC
+
+		&:first-of-type
+			padding-left: 0
+
+		&:last-of-type
+			border-right: none
+
+		a
+			color: $aisle9-blue
+			text-decoration: none
+
+	.hero-content
+
+		h1
+			color: #FFF
+			margin-top: 50px
+			float: left
+
+
+
+
+

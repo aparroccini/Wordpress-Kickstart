@@ -1,0 +1,136 @@
+.main-container
+	
+	.hero-content
+		position: relative
+		padding-top: 0
+
+		> img
+			width: 100%
+			position: relative
+			z-index: 1
+
+			@media (max-width: $break-small)
+				max-width: 100%
+
+
+		.inside
+			position: absolute
+			z-index: 9999
+			width: 90%
+			top: 0
+			height: 100%
+
+			h1	
+				color: #fff
+				padding-top: 100px
+
+				@media (max-width: $break-small)
+					margin-top: -10px 
+					padding-top: 0
+					font-size: 1.8em
+					position: absolute
+					z-index: 1
+
+			.scroller
+				bottom: 30px
+
+			
+	.sub-content 
+		padding: 50px 6%
+		background-color: #FFF
+
+	main
+		padding: 0
+
+	section
+		.inside
+			padding: 0px 5%
+			position: absolute
+			z-index: 999
+
+		h3
+			text-transform: uppercase
+			padding-bottom: 20px
+
+.first
+	background-color: #fff
+	padding: 0
+
+	.case-grid
+		
+		margin-bottom: -2px
+
+		li
+			width: 24.75%
+			text-align: center
+			position: relative
+			display: inline-block
+			line-height: inherit
+			margin-right: -2px
+
+			a
+				line-height: 1
+
+			@media (max-width: $break-small)
+				@include spanWidth(12)
+				margin-top: -7px
+
+			.overlay
+				position: absolute
+				background-color: rgba(51, 201, 235, .8)
+				width: 100%
+				height: 100%
+				opacity: 0
+				transition: opacity 0.25s ease-in-out
+				-moz-transition: opacity 0.25s ease-in-out
+				-webkit-transition: opacity 0.25s ease-in-out
+				top: 0
+				z-index: 999
+
+				@media (max-width: $break-tablet)
+					opacity: 1
+					top: inherit
+					bottom: 0px
+					height: 50px
+					background-color: #000
+
+				@media (min-width: $break-tablet)
+
+					&:hover
+						opacity: 1
+
+				h2
+					color: #fff
+					padding-top: 40%
+					width: 90%
+					margin: 0 auto
+					text-transform: uppercase
+
+					@media (max-width: $break-tablet)
+						padding-top: 10px
+						font-size: .8em
+
+			img
+				max-width: 100%
+
+				@media (max-width: $break-small)
+					@include spanWidth(12)
+
+.clients.section-4
+	background-color: $aisle9-blue
+	text-align: center
+
+	div
+		padding: 50px 2%
+
+		h3
+			color: #fff
+			text-transform: uppercase
+			padding-bottom: 20px
+
+	.btn.black 
+		text-align: center
+		margin: 0 auto
+		margin-top: 20px
+
+

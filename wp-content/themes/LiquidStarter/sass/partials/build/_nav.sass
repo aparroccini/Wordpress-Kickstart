@@ -1,0 +1,83 @@
+nav li a
+	font-weight: 300
+
+
+header, footer
+
+	nav.main, .footer-nav
+	
+		ul
+			li
+				display: inline-block
+				padding: 0 10px
+				line-height: 1
+
+				@media (max-width: $break-large)
+					padding: 0 5px 
+					font-size: .8em
+
+				&:first-of-type
+					padding-left: 0
+
+				&:last-of-type
+					border-right: none
+
+				a
+					text-decoration: none
+					font-family: $heading-font
+					line-height: 1
+
+
+	nav.utility
+		padding-top: 12px
+		@media (max-width: $break-tablet)
+			@include spanWidth(2)
+		@media (max-width: $break-small)
+			@include spanWidth(5)
+			padding-top: 0
+
+		a
+			display: inline-block
+
+		a.lets-talk
+			float: right
+
+			@media (max-width: $break-small)
+				display: none
+			&:hover
+				.contact-img
+					display: none
+
+				.contact-img-hover
+					display: block
+					padding-bottom: 8px
+
+		.contact-img-hover
+			display: none
+
+		a.mobile-nav
+			display: none
+			padding-top: 17px
+
+			img
+				width: 30px
+				padding-top: 10px
+
+			@media (max-width: $break-small)
+				display: inline-block
+				float: right
+
+		.mobile-nav.hide
+			display: none
+
+		.mobile-nav-close.hide
+			display: none
+
+		.mobile-nav-close
+			display: inline-block
+			padding-top: 17px
+			float: right
+
+			img
+				width: 30px
+				padding-top: 10px

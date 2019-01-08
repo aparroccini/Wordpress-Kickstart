@@ -1,0 +1,156 @@
+.page-template-template-casestudy
+
+	.main-container
+		background-color: #FFF
+		
+	.hero-content
+		position: relative
+		padding-top: 0
+
+		> img
+			max-width: 100%
+			position: relative
+
+			@media (max-width: $break-small)
+				height: 200px
+				width: 100% 
+
+		.inside
+			position: absolute
+			z-index: 9999
+			width: 90%
+			height: 100%
+
+			h1	
+				color: #fff
+				padding-top: 100px
+
+				@media (max-width: $break-small)
+					padding-top: 0
+					margin-top: 0
+
+			.scroller
+				bottom: 30px
+
+			
+	.sub-content 
+		padding: 50px 6%
+
+		.span4
+
+			@media (max-width: $break-small)
+				@include spanWidth(12)
+
+		img
+			
+			max-width: 100%
+
+			@media (max-width: $break-small)
+				margin: 0 auto
+				display: block
+				float: none
+
+		.span8
+			@media (max-width: $break-small)
+				@include spanWidth(12)
+			img
+				padding-bottom: 20px
+				max-width: 100%
+
+				@media (max-width: $break-small)
+					margin: 0 auto
+					display: block
+
+	.client-stats
+		padding: 0 2%
+
+		ul
+			border-top: 1px solid #e6e7e8
+			border-bottom: 1px solid #e6e7e8
+			text-align: center
+			width: 100%
+			padding: 25px 0
+
+			li
+				display: inline-block
+				padding: 0 5%
+
+				@media (max-width: $break-small)
+					display: list-item
+
+				h3
+					color: $aisle9-blue
+					padding-bottom: 0
+
+				p
+					text-transform: uppercase
+					font-weight: 500
+					padding-bottom: 20px
+
+	.case-detail
+
+		.span6
+			@media (max-width: $break-small)
+				@include spanWidth(12)
+
+		h4
+			color: $aisle9-blue
+			border-bottom: 1px solid #000
+			margin-bottom: 20px
+			padding-bottom: 5px
+			text-transform: uppercase
+
+		p
+			padding-bottom: 20px
+
+		p strong
+			font-weight: 800
+
+		img
+			max-width: 100%
+			padding-top: 50px
+
+			@media (max-width: $break-small)
+				margin: 0 auto
+				display: block
+				max-width: 80%
+
+
+	.case-quote
+		padding: 50px 0 !important
+		background-color: $aisle9-blue
+		background-image: url('../img/quote-tag.png')
+		background-repeat: no-repeat
+		background-position: 8% 45%
+
+		@media (max-width: $break-small)
+			background-image: none
+
+		.quote
+			width: 70%
+			margin: 0 auto
+			
+			h4
+				line-height: 1.4
+				font-weight: 100
+				color: #fff
+
+			p
+				color: #000
+				text-transform: uppercase
+
+				&:before
+					content: "- "
+
+
+	.blog-part
+		overflow: hidden
+		background-color: $aisle9-gray
+		padding-top: 0
+
+		.span8
+			padding-left: 5%
+			padding-top: 30px
+
+			@media (max-width: $break-small)
+				padding-left: 0

@@ -1,0 +1,133 @@
+.page-template-template-blog, .category
+
+	main
+		background-color: #FFF
+		clear: both
+
+	.sub-content
+		background-color: #FFF
+	
+	.span9, .span3
+		@media (max-width: $break-small)
+			@include spanWidth(12)
+
+	.blog-list
+
+		> li
+			padding-bottom: 25px
+
+		.tiny-line
+			display: block
+			border-top: 2px solid #CCC
+			width: 30%
+			padding-bottom: 20px
+
+	.span5
+		padding-right: 1.5%
+
+		@media (max-width: $break-small)
+			@include spanWidth(12)
+
+		img
+			width: 100%
+			height: auto
+	.span7
+		padding-left: 0
+		margin-left: 0
+
+		@media (max-width: $break-small)
+			@include spanWidth(12)
+
+		a
+			text-transform: uppercase
+			color: $aisle9-blue
+			text-decoration: none
+
+			h3
+				font-size: 1.8em
+				padding-bottom: 20px
+
+	.more, .blog-meta
+
+		@media (max-width: $break-small)
+			display: block
+			width: 100% 
+
+			a
+				float: none !important
+
+	.meta
+		border-top: 1px solid #CCC
+		border-bottom: 1px solid #CCC
+		padding: 10px 0
+		margin: 20px 0
+
+		ul
+			padding-top: 0
+
+		.more a
+			display: block
+			float: right
+			color: $aisle9-blue
+			text-decoration: none
+
+	
+
+	.cat-list
+		h4
+			color: $aisle9-blue
+			text-transform: uppercase
+			padding-bottom: 20px
+
+		li
+			padding-bottom: 5px
+
+			a
+				color: #9c9c9d
+				text-decoration: none
+
+				&:hover
+					color: $aisle9-blue
+
+	.pagination
+		width: 100%
+
+		.page-numbers
+			display: inline-block
+			vertical-align: middle
+			padding: 16px 20px
+			text-align: center
+			text-decoration: none
+			color: #000
+
+			&:hover
+				color: $aisle9-blue
+
+
+		.current
+			background-color: $aisle9-blue
+			color: #FFF
+
+			&:hover
+				color: #FFF
+
+		.next, .prev
+			width: auto
+			padding: 20px 0
+
+.category, .archive
+	.hero-content
+		background-size: 100%
+		background-repeat: no-repeat
+		height: 600px !important
+
+		@media (max-width: $break-small)
+			height: 250px !important
+
+		h1
+			@media (max-width: $break-small)
+				padding-top: 100px !important
+
+
+
+

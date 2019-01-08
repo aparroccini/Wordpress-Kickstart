@@ -1,0 +1,174 @@
+.page-template-template-team
+
+	.hero-content
+
+		.inside
+
+			h1	
+				color: #000
+
+				@media (max-width: $break-small)
+					padding-top: 0px
+
+	.sub-content 
+		padding: 50px 0
+
+	.sub-content.first
+		padding: 50px 6% !important
+
+
+
+
+	main
+		padding: 0
+
+	section
+		.inside
+			padding: 0px 5%
+			position: absolute
+			z-index: 999
+
+		h3
+			text-transform: uppercase
+			padding-bottom: 20px
+
+	.first
+
+		.team-grid
+			margin-left: -1.5%
+
+			@media (max-width: $break-small)
+				margin-left: 0
+
+			li.blank
+				@include spanWidth(1)
+
+			li
+				//background-image: url('../img/generic-man.png')
+				background-repeat: no-repeat
+				text-align: center
+				@include spanWidth(2)
+				display: inline-block
+				vertical-align: top
+				margin-bottom: 20px
+
+				@media (max-width: $break-small)
+					@include spanWidth(12)
+
+				img
+					max-width: 100%
+
+				a
+					text-decoration: none
+					display: block
+					color: $aisle9-blue
+					font-size: 1em
+
+				h4
+					padding-top: 10px
+
+				p
+					line-height: 1.2em
+					padding-top: 10px
+
+.case-study
+	padding: 0
+	background-color: $aisle9-blue
+
+	@media (max-width: $break-small)
+		padding: 0 2%
+
+	.span8
+		padding-left: 3%
+
+		@media (max-width: $break-small)
+			@include spanWidth(12)
+			padding-right: 0
+			padding-left: 0
+	.span4
+		@media (max-width: $break-small)
+			width: 80%
+			margin: 0 auto
+			display: block
+			float: none
+			padding-top: 20px
+
+		img
+			width: 100%
+			margin-bottom: -2px
+
+	h2
+		color: #000
+		text-transform: uppercase
+		padding-bottom: 20px
+
+		@media (max-width: $break-small)
+			text-align: center
+
+
+	h5
+		text-transform: uppercase
+		font-weight: bold
+		padding-bottom: 10px
+		padding-top: 40px
+
+		@media (max-width: $break-small)
+			text-align: center
+
+	p
+		color: #FFF
+		width: 80%
+
+		@media (max-width: $break-small)
+			text-align: center
+			width: 100%
+
+
+.page-template-template-team-single
+
+	.sub-content
+		padding-top: 200px
+
+		@media (max-width: $break-small)
+			padding-top: 100px
+
+		.span4, .span8	
+			@media (max-width: $break-small)
+				@include spanWidth(12)
+
+		.span4
+			a
+				display: block
+				background-image: url('../img/linkedin-logo.png')
+				background-repeat: no-repeat
+				padding-left: 50px
+				height: 40px
+				padding-top: 5px
+
+		h3
+			padding-bottom: 5px
+			@media (max-width: $break-small)
+				text-align: center
+
+		h4
+			color: $aisle9-blue
+			padding-bottom: 20px
+			@media (max-width: $break-small)
+				text-align: center
+
+		img
+			max-width: 90%
+
+			@media (max-width: $break-small)
+				max-width: 100%
+				margin: 0 auto
+				display: block
+
+	p
+		padding-bottom: 20px
+
+	.linkedin
+		color: #000
+		text-decoration: none
+		display: block
+		margin-top: 20px
